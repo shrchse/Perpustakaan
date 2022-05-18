@@ -1,0 +1,14 @@
+table{
+    font-size: 20px;
+}
+tr{
+    border-bottom: 1px solid white;
+}
+th,tr,td{
+    background-color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+th{
+    background-color: aliceblue;
+}
