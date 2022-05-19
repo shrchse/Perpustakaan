@@ -307,3 +307,18 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
+.tes{
+    display: inline;
+    position: fixed;
+    left: 1000px;
+    top: 20px;
+    font-size: 24px;
+}
+a{
+    color: #695CFE;
+    text-decoration: none;
+    position: relative;
+}
+a:hover{
+    color: #707070;
+}
