@@ -36,37 +36,37 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/dashboard">
                             <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/buku">
                             <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Informasi</span>
+                            <span class="text nav-text">Daftar Buku</span>
                         </a>
                     </li>
 
-                    <li class="nav-link">
+                    <!-- <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-pie-chart-alt icon' ></i>
                             <span class="text nav-text">Analytics</span>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">About Us</span>
+                        <a href="/peminjaman">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Peminjaman</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-wallet icon' ></i>
-                            <span class="text nav-text">Peminjaman</span>
+                        <a href="/about">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">About Us</span>
                         </a>
                     </li>
 
@@ -81,7 +81,7 @@
                     </a>
                 </li>
 
-                <li class="mode">
+                <!-- <li class="mode">
                     <div class="sun-moon">
                         <i class='bx bx-moon icon moon'></i>
                         <i class='bx bx-sun icon sun'></i>
@@ -92,7 +92,7 @@
                         <span class="switch"></span>
                     </div>
                 </li>
-                
+                 -->
             </div>
         </div>
 
@@ -100,7 +100,9 @@
     </head>
     <body>
     <section class="home">
-        <div class="text">Sistem Informasi Perpustakaan</div>
+        <div class="text">Sistem Informasi Perpustakaan
+            <li class="tes"><a href="login">Sign in</a></li>
+        </div>
         <div class="text">@yield('content')</div>
     </section>
     </body>

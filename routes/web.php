@@ -21,6 +21,15 @@ Route::get('/admin', function(){
     return view('admin');
 });
 
-Route::get('/main', function(){
-    return view('main');
+Route::get('/buku', function(){
+    return view('buku');
+});
+Route::get('dashboard', function(){
+return view('dashboard');
+});
+Route::get('peminjaman', function(){
+return view('peminjaman');
+});
+Route::get('about', function(){
+return view('about');
 });
