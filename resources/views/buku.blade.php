@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.dashboardlayout')
 @section('content')
     <!-- tables goes here -->
     <style>

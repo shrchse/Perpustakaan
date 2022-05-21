@@ -24,12 +24,25 @@ Route::get('/admin', function(){
 Route::get('/buku', function(){
     return view('buku');
 });
+
 Route::get('dashboard', function(){
-return view('dashboard');
+    return view('dashboard');
 });
+
 Route::get('peminjaman', function(){
-return view('peminjaman');
+    return view('peminjaman');
 });
+
 Route::get('about', function(){
-return view('about');
+    return view('about');
+});
+
+Route::get('login', function(){
+    return view('loginpage');
+});
+Route::get('sign-up', function(){
+    return view('createacc');
+});
+Route::get('admin', function(){
+    return view('admin_dashboard');
 });

@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.dashboardlayout')
 @section('content')
 <style>
     text{
@@ -61,9 +61,8 @@
     .cardview .button:hover{
         background-color: whitesmoke;
         transition: 0.3s;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    }
-
-
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
     .container .list:hover, .list-big:hover{
         border: 1px solid #d66eff;
         transition: 0.3s;
