@@ -101,7 +101,6 @@
     <body>
     <section class="home">
         <div class="text">Sistem Informasi Perpustakaan
-            <li class="tes"><a href="login">Sign in</a></li>
         </div>
         <div class="text">@yield('content')</div>
     </section>
