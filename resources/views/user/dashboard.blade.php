@@ -37,6 +37,8 @@
         border-radius: 12px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         font-size: 24px;
+        background-image: url('images/bg-purple.jpg');
+        object-fit: cover;
     }
     .cardview{
         position: relative;
@@ -71,12 +73,6 @@
         font-size: 30px;
         padding: 10px;
     }
-    
-    /* .ima{
-        left: 460px;
-        top: -60px;
-        position: relative;
-    } */
 </style>
 
 <div class="cardview">

@@ -1,5 +1,5 @@
 .box{
-    background: rgba(157, 49, 202, 0.2);
+    background: r695CFE;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -40,7 +40,7 @@ button{
     font-size: 20px;
     font-weight: 300;
     text-align: center;
-    background: rgba(244, 180, 255, 0.2);
+    background: rgba(56, 0, 176, 0.636);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -48,7 +48,7 @@ button{
     border: 1px solid rgba(244, 180, 255, 0.3);
 }
 button:hover{
-    background-color: rgb(158, 198, 245);
+    background-color: rgba(0, 0, 0, 0.553);
     transition: 0.3s;
     box-shadow: black;
 }
