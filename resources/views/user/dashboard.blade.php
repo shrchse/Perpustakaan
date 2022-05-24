@@ -4,6 +4,9 @@
     text{
         font-size: 20px;
     }
+    a{
+        color:  #707070;
+    }
     .quotes{
         font-size: 24px;
         padding-left: 40px;
@@ -17,8 +20,8 @@
         left: 90px;
     }
     .container .list{
-        display: inline-block;
         position: relative;
+        float: left;
         width: 200px;
         height: 300px;
         margin-right: 35px;
@@ -26,10 +29,16 @@
         border-radius: 12px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         font-size: 24px;
+        background: rgba(255, 255, 255, 0.11);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .container .list-big{
-        display: inline-block;
         position: relative;
+        float: left;
         width: 600px;
         height: 300px;
         margin-right: 35px;
@@ -37,9 +46,17 @@
         border-radius: 12px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         font-size: 24px;
-        background-image: url('images/bg-purple.jpg');
-        object-fit: cover;
     }
+    .container .list-big .in{
+        padding: 30px;
+        text-align: center;
+    }
+    /* .container .list-big .in img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+    } */
     .cardview{
         position: relative;
         width: 1100px;
@@ -47,6 +64,8 @@
         border: 1px solid lightsteelblue;
         border-radius: 12px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-image: url('images/bg-purple.jpg');
+        background-size: cover;
     }
     .cardview .button{
         border: 1px solid white;
@@ -80,9 +99,10 @@
     <div class="container">
         <div class="list">
             <table><td>Discover new books everyday</td></table>
-            <div class="button">Start Now!</div>
+            <a href="/buku"><div class="button">Start Now!</div></a>
         </div>
-        <div class="list-big"></div>
+        <div class="list-big"><div class="in">Welcome
+        </div></div>
     </div>
 </div>
 @endsection
