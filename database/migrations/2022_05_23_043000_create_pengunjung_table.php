@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('pengunjung', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->date('tgl_berkunjung');
+            $table->string('keterangan');
             $table->timestamps();
         });
     }
