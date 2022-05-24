@@ -14,7 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('pengembalian', function (Blueprint $table) {
-            $table->id();
+            $table->id('kode');
+            $table->string('judul');
+            $table->date('tgl_kembali');
             $table->timestamps();
         });
     }

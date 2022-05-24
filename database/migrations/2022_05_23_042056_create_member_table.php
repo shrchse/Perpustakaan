@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('member', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('no_member');
+            $table->date('tgl_daftar');
             $table->timestamps();
         });
     }
