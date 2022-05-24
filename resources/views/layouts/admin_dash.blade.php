@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css-admin.css">
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     
@@ -36,35 +36,35 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="/dashboard">
+                        <a href="/admin_dashboard">
                             <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="/buku">
+                        <a href="/daftar_buku">
                             <i class='bx bx-bar-chart-alt-2 icon' ></i>
                             <span class="text nav-text">Daftar Buku</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/daftar_member">
                             <i class='bx bx-pie-chart-alt icon' ></i>
                             <span class="text nav-text">Daftar Member</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="/peminjaman">
+                        <a href="/daftar_pinjam">
                             <i class='bx bx-wallet icon' ></i>
                             <span class="text nav-text">Daftar Pinjam</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="/about">
+                        <a href="/admin_about">
                             <i class='bx bx-heart icon' ></i>
                             <span class="text nav-text">About Us</span>
                         </a>

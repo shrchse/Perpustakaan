@@ -1,4 +1,4 @@
 @extends('layouts.admin_dash')
-@section('content')
-    About
+@section('admin')
+
 @endsection

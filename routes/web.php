@@ -49,18 +49,18 @@ Route::get('sign-up', function(){
 
 // route untuk admin view //
 
-Route::get('admin', function(){
+Route::get('admin_dashboard', function(){
     return view('admin.admin_dashboard');
 });
-Route::get('admin/daftar-buku', function(){
+Route::get('daftar_buku', function(){
     return view('admin.daftar_buku');
 });
-Route::get('admin/daftar-member', function(){
+Route::get('daftar_member', function(){
     return view('admin.daftar_member');
 });
-Route::get('admin/daftar-pinjam', function(){
+Route::get('daftar_pinjam', function(){
     return view('admin.daftar_pinjam');
 });
-Route::get('admin/admin_about', function(){
-    return view('admin.about_us');
+Route::get('admin_about', function(){
+    return view('admin.admin_about');
 });
