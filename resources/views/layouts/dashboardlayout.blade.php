@@ -19,7 +19,7 @@
 
                 <div class="text logo-text">
                     <span class="name">Kelompok 5</span>
-                    <span class="profession">Web developer</span>
+                    <span class="profession">Pemrograman Web II</span>
                 </div>
             </div>
 
@@ -31,7 +31,9 @@
 
                 <li class="search-box">
                     <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
+                    <form action="/search">
+                    <input type="text" placeholder="Search..."> 
+                    <input type="submit" value="submit" hidden></form>
                 </li>
 
                 <ul class="menu-links">
@@ -44,7 +46,7 @@
 
                     <li class="nav-link">
                         <a href="/buku">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <i class='bx bx-book icon' ></i>
                             <span class="text nav-text">Daftar Buku</span>
                         </a>
                     </li>
@@ -58,7 +60,7 @@
 
                     <li class="nav-link">
                         <a href="/peminjaman">
-                            <i class='bx bx-wallet icon' ></i>
+                            <i class='bx bx-file icon' ></i>
                             <span class="text nav-text">Peminjaman</span>
                         </a>
                     </li>

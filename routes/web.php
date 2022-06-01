@@ -47,6 +47,9 @@ Route::get('sign-up', function(){
     return view('createacc');
 });
 
+Route::get('search', function(){
+    return view('user.search');
+});
 // route untuk admin view //
 
 Route::get('admin_dashboard', function(){
@@ -63,4 +66,7 @@ Route::get('daftar_pinjam', function(){
 });
 Route::get('admin_about', function(){
     return view('admin.admin_about');
+});
+Route::get('admin_search', function(){
+    return view('admin.admin_search');
 });

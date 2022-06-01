@@ -31,7 +31,9 @@
 
                 <li class="search-box">
                     <i class='bx bx-search icon'></i>
+                    <form action="admin_search" method="get">
                     <input type="text" placeholder="Search...">
+                    <input type="submit" value="submit" hidden></form>
                 </li>
 
                 <ul class="menu-links">
@@ -44,21 +46,21 @@
 
                     <li class="nav-link">
                         <a href="/daftar_buku">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <i class='bx bx-book icon' ></i>
                             <span class="text nav-text">Daftar Buku</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="/daftar_member">
-                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <i class='bx bx-group icon' ></i>
                             <span class="text nav-text">Daftar Member</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="/daftar_pinjam">
-                            <i class='bx bx-wallet icon' ></i>
+                            <i class='bx bx-calendar icon' ></i>
                             <span class="text nav-text">Daftar Pinjam</span>
                         </a>
                     </li>

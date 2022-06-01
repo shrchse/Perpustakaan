@@ -22,7 +22,7 @@ input[type=text],[type=date]{
     border-bottom: 1px solid black;
     outline: none;
     width: 300px;
-    margin-left: 50px;
+    margin-left: -50px;
     font-size: 20px;
     position: relative;
 }
