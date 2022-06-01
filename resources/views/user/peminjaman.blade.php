@@ -18,9 +18,9 @@
             </tr>
             <tr>
                 <td><label for="tgl_pinjam">Tanggal Peminjaman</label></td>
-                <td><input type="date" name="tgl_pinjam" id="tgl_pinjam"></td>
+                <td><input style="margin-left:10px;" type="date" name="tgl_pinjam" id="tgl_pinjam"></td>
             </tr>
-            <tr>
+            <tr>    
                 <td></td>
                 <td></td>
             </tr> 
