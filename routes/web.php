@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MemberController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +24,11 @@ Route::get('admin', function(){
     return view('user.admin');
 });
 
-Route::get('buku', function(){
-    return view('user.buku');
-});
+Route::get('buku', [BookController::class, 'index']);
+
+// Route::get('buku', function(){
+//     return view('user.buku');
+// });
 
 Route::get('dashboard', function(){
     return view('user.dashboard');
