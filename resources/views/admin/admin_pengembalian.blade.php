@@ -67,20 +67,20 @@
     </style>
 
     <h4>Daftar Peminjaman</h4>
-    <button class="add" type="submit">Add</button>
+    <a href="form_pengembalian"><button class="add" type="submit">Add</button></a>
     <table>
         <colgroup span="2"></colgroup>
         <th>No. Member</th>
-        <th>Nama Member</th>
-        <th>Keterangan</th>
-        <th>Tanggal Selesai</th>
+        <th>Kode Buku</th>
+        <th>Tanggal Kembali</th>
         <th colspan=2 scope="colgroup">Action</th>
-        <tr>
-            <td>Temp</td>
-            <td>Temp</td>
-            <td>Temp</td>
-            <td>Temp</td>
-            <td><button class="edit" type="submit">Edit</button></td>
-            <td><button class="delete" type="submit">Delete</button></td>
-        </tr>
+
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+                <td><button class="edit" type="submit">Edit</button></td>
+                <td><button class="delete" type="submit">Delete</button></td>
+            </tr>
+    </table>
 @endsection

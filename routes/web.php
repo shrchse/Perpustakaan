@@ -5,6 +5,7 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
 use App\Http\Controllers\UserAuth;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -107,9 +108,12 @@ Route::get('form_buku', function(){
     return view('admin.admin_formBuku');
 });
 
-Route::get('form_pengembalian', function(){
-    return view('admin.admin_formPengembalian');
+Route::get('daftar_pengembalian', function(){
+    return view('admin.admin_pengembalian');
 });
+    Route::get('form_pengembalian', function(){
+        return view('admin.admin_formPengembalian');
+    });
 
 Route::get('form_addMember', function(){
     return view('admin.add_member');
@@ -118,3 +122,7 @@ Route::get('form_addMember', function(){
 Route::get('daftar_skorsing', function(){
     return view('admin.daftar_skorsing');
 });
+
+//Auth
+Route::get('login', [LoginController::class, 'create'])->name('login');
+Route::post('login', [LoginController::class, 'store']);
