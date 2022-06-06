@@ -100,3 +100,17 @@ Route::get('admin_about', function(){
 Route::get('admin_search', function(){
     return view('admin.admin_search');
 });
+
+//addition - new
+
+Route::get('form_buku', function(){
+    return view('admin.admin_formBuku');
+});
+
+Route::get('form_pengembalian', function(){
+    return view('admin.admin_formPengembalian');
+});
+
+Route::get('form_addMember', function(){
+    return view('admin.add_member');
+});
