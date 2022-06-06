@@ -160,7 +160,15 @@ Route::get('form_addMember', function(){
 Route::get('daftar_skorsing', function(){
     return view('admin.daftar_skorsing');
 });
+
+
+Route::get('/user/member/create', [MemberController::class, 'create']);
+
+
 Route::get('daftar_skorsing',[SkorsingController::class, 'index']);
 
+//<<<<<<< another_push
 //task
-Route::get('tasks', [TaskController::class, 'index']);
+//Route::get('tasks', [TaskController::class, 'index']);
+//=======
+//>>>>>>> master
