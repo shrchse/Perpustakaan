@@ -67,7 +67,7 @@
     </style>
 
     <h4>Daftar Skorsing</h4>
-    <button class="add" type="submit">Add</button>
+    <a href="form_skorsing"><button class="add" type="submit">Add</button></a>
     <table>
         <colgroup span="2"></colgroup>
         <th>No. Member</th>

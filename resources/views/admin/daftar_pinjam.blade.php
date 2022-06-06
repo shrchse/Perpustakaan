@@ -67,7 +67,7 @@
     </style>
 
     <h4>Daftar Peminjaman</h4>
-    <button class="add" type="submit">Add</button>
+    <a href="form_peminjaman"><button class="add" type="submit">Add</button></a>
     <table>
         <colgroup span="2"></colgroup>
         <th>No. Member</th>
