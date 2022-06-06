@@ -68,7 +68,7 @@
     </style>
 
     <h4>Daftar Buku</h4>
-    <button class="add" type="submit">Add</button>
+    <a href="form_buku"><button class="add" type="submit">Add</button></a>
     <br>
     <table>
         <colgroup span="2"></colgroup>
@@ -83,8 +83,8 @@
                 <td>{{ $item->judul }}</td>
                 <td>{{ $item->penulis }}</td>
                 <td>{{ $item->penerbit }}</td>
-                <td><button class="edit" type="submit">Edit</button></td>
-                <td><button class="delete" type="submit">Delete</button></td>
+                <td><button class="edit" type="submit"><a href="#" class="btn btn-warning">Edit</button></td>
+                <td><button class="delete" type="submit"><a href="#" class="btn btn-danger">Delete</button></td>
             </tr>
         @endforeach
     </table>
