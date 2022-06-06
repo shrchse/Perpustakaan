@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MemberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,9 +59,12 @@ Route::get('admin_dashboard', function(){
 Route::get('daftar_buku', function(){
     return view('admin.daftar_buku');
 });
-Route::get('daftar_member', function(){
-    return view('admin.daftar_member');
-});
+//Route::get('daftar_member', function(){
+//    return view('admin.daftar_member');
+//});
+
+Route::get('daftar_member',[MemberController::class, 'index']);
+
 Route::get('daftar_pinjam', function(){
     return view('admin.daftar_pinjam');
 });
