@@ -24,6 +24,9 @@ Route::get('/welcome', function () {
 
 // Route Untuk Member View //
 
+Route::post("user", [UserAuth::class,'userLogin']);
+Route::view("login",'loginpage');
+
 Route::get('admin', function(){
     return view('user.admin');
 });
@@ -46,13 +49,21 @@ Route::get('about', function(){
     return view('user.about');
 });
 
-Route::get('login', function(){
-   return view('loginpage');
-});
+//Route::get('login', function(){
+   //return view('loginpage');
+//});
 
-Route::post("user", [UserAuth::class,'userLogin']);
 
-Route::view("login",'login');
+//Route::view("profile",'profile');
+
+//Route::get('/logout', function () {
+  //  if(session()->has('user'))
+  //  {
+  //      session()->pull('user');
+   // }
+  //  return redirect('login');
+//});
+
 
 Route::get('sign-up', function(){
     return view('createacc');

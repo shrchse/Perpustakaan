@@ -1,8 +1,9 @@
 @extends('layouts.loginlayout')
 @section ('content')
 <div class="box">
-    <div class="login">Login to Your Account</div>
-    <form action="user" method="POST">
+    <div class="">Login to Your Account</div>
+    <form action="admin_dashboard" method="GET">
+        @csrf
         <label for="username">Username</label>
         <input type="text" name="username" id="username" > <br><br>
         <label for="password">Password</label>
