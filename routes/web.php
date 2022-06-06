@@ -5,7 +5,6 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
 use App\Http\Controllers\UserAuth;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +25,15 @@ Route::get('/welcome', function () {
 
 Route::post("user", [UserAuth::class,'userLogin']);
 Route::view("login",'loginpage');
+
+
+//Route::get('/logout', function () {
+  //  if(session()->has('user'))
+    //{
+      //  session()->pull('user');
+    //}
+    //return redirect('loginpage');
+//});
 
 Route::get('admin', function(){
     return view('user.admin');
@@ -101,16 +109,32 @@ Route::get('admin_search', function(){
     return view('admin.admin_search');
 });
 
-//addition - new
+Route::group(['namespace' => 'App\Http\Controllers'], function()
+{   
+    /**
+     * Home Routes
+     */
+    Route::get('/', 'HomeController@index')->name('home.index');
 
-Route::get('form_buku', function(){
-    return view('admin.admin_formBuku');
-});
+    Route::group(['middleware' => ['guest']], function() {
+        /**
+         * Register Routes
+         */
+        Route::get('/register', 'RegisterController@show')->name('register.show');
+        Route::post('/register', 'RegisterController@register')->name('register.perform');
 
-Route::get('form_pengembalian', function(){
-    return view('admin.admin_formPengembalian');
-});
+        /**
+         * Login Routes
+         */
+        Route::get('/login', 'LoginController@show')->name('login.show');
+        Route::post('/login', 'LoginController@login')->name('login.perform');
 
-Route::get('form_addMember', function(){
-    return view('admin.add_member');
+    });
+
+    Route::group(['middleware' => ['auth']], function() {
+        /**
+         * Logout Routes
+         */
+        Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
+    });
 });
