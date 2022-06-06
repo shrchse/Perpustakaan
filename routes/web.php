@@ -4,9 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
+use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\UserAuth;
-use App\Http\Controllers\LoginController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +26,15 @@ Route::get('/welcome', function () {
 
 Route::post("user", [UserAuth::class,'userLogin']);
 Route::view("login",'loginpage');
+
+
+//Route::get('/logout', function () {
+  //  if(session()->has('user'))
+    //{
+      //  session()->pull('user');
+    //}
+    //return redirect('loginpage');
+//});
 
 Route::get('admin', function(){
     return view('user.admin');
@@ -78,6 +86,8 @@ Route::get('search', function(){
 Route::get('admin_dashboard', function(){
     return view('admin.admin_dashboard');
 });
+Route::get('admin_dashboard', [VisitorController::class, 'index']);
+
 Route::get('daftar_buku', [BookController::class, 'index2']);
 
 // Route::get('daftar_buku', function(){
@@ -102,10 +112,34 @@ Route::get('admin_search', function(){
     return view('admin.admin_search');
 });
 
-//addition - new
+Route::group(['namespace' => 'App\Http\Controllers'], function()
+{   
+    /**
+     * Home Routes
+     */
+    Route::get('/', 'HomeController@index')->name('home.index');
 
-Route::get('form_buku', function(){
-    return view('admin.admin_formBuku');
+    Route::group(['middleware' => ['guest']], function() {
+        /**
+         * Register Routes
+         */
+        Route::get('/register', 'RegisterController@show')->name('register.show');
+        Route::post('/register', 'RegisterController@register')->name('register.perform');
+
+        /**
+         * Login Routes
+         */
+        Route::get('/login', 'LoginController@show')->name('login.show');
+        Route::post('/login', 'LoginController@login')->name('login.perform');
+
+    });
+
+    Route::group(['middleware' => ['auth']], function() {
+        /**
+         * Logout Routes
+         */
+        Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
+    });
 });
 
 Route::get('daftar_pengembalian', function(){
@@ -123,6 +157,3 @@ Route::get('daftar_skorsing', function(){
     return view('admin.daftar_skorsing');
 });
 
-//Auth
-Route::get('login', [LoginController::class, 'create'])->name('login');
-Route::post('login', [LoginController::class, 'store']);

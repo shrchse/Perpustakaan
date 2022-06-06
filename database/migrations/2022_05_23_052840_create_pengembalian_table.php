@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('no_member');
             $table->foreignId('kode_buku');
-            $table->string('judul');
             $table->date('tgl_kembali');
             $table->timestamps();
         });
