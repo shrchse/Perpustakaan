@@ -66,7 +66,7 @@
         <th>Penerbit</th>
         <th colspan=2 scope="colgroup">Action</th>
 
-        <tr>
+        <!-- <tr>
             <td>101</td>
             <td>Just You and Me</td>
             <td>Titi Sanaria</td>
@@ -89,8 +89,18 @@
             <td>Leutika</td>
             <td><button class="edit" type="submit">Edit</button></td>
             <td><button class="delete" type="submit">Delete</button></td>
-        </tr>
+        </tr> -->
 
+        @foreach($data as $item)
+            <tr>
+                <td>{{ $item['kode_buku'] }}</td>
+                <td>{{ $item['judul'] }}</td>
+                <td>{{ $item['penulis'] }}</td>
+                <td>{{ $item['penerbit'] }}</td>
+                <td><button class="edit" type="submit">Edit</button></td>
+                <td><button class="delete" type="submit">Delete</button></td>
+            </tr>
+        @endforeach
     </table>
 
 @endsection
