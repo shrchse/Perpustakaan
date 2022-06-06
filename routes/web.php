@@ -157,3 +157,5 @@ Route::get('daftar_skorsing', function(){
     return view('admin.daftar_skorsing');
 });
 
+Route::get('/user/member/create', [MemberController::class, 'create']);
+
