@@ -5,9 +5,9 @@
             font-size: 20px;
             text-align: center;
             border: 1px solid white;
-            margin-left: auto;
+            margin-left: 0;
             margin-right: auto;
-            padding: 2%;
+            padding: 1%;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             border-radius: 15px;
         }
