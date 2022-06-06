@@ -142,9 +142,12 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     });
 });
 
-Route::get('form_pengembalian', function(){
-    return view('admin.admin_formPengembalian');
+Route::get('daftar_pengembalian', function(){
+    return view('admin.admin_pengembalian');
 });
+    Route::get('form_pengembalian', function(){
+        return view('admin.admin_formPengembalian');
+    });
 
 Route::get('form_addMember', function(){
     return view('admin.add_member');
