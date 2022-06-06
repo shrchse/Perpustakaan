@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
+use App\Http\Controllers\UserAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ use App\Http\Controllers\PeminjamanController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
 
 // Route Untuk Member View //
 
@@ -45,8 +47,12 @@ Route::get('about', function(){
 });
 
 Route::get('login', function(){
-    return view('loginpage');
+   return view('loginpage');
 });
+
+Route::post("user", [UserAuth::class,'userLogin']);
+
+Route::view("login",'login');
 
 Route::get('sign-up', function(){
     return view('createacc');
