@@ -68,7 +68,7 @@
     </style>
 
     <h4>Daftar Buku</h4>
-    <button class="add" type="submit">Add</button>
+    <a href="form_buku"><button class="add" type="submit">Add</button></a>
     <br>
     <table>
         <colgroup span="2"></colgroup>

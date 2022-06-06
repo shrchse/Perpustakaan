@@ -6,6 +6,7 @@ use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\SkorsingController;
+use App\Http\Controllers\TaskController;
 use App\Http\Controllers\UserAuth;
 /*
 |--------------------------------------------------------------------------
@@ -90,7 +91,9 @@ Route::get('admin_dashboard', function(){
 Route::get('admin_dashboard', [VisitorController::class, 'index']);
 
 Route::get('daftar_buku', [BookController::class, 'index2']);
-
+    Route::get('form_buku', function(){
+        return view('admin.form_buku');
+    });
 // Route::get('daftar_buku', function(){
 //     return view('admin.daftar_buku');
 // });
@@ -164,3 +167,8 @@ Route::get('/user/member/create', [MemberController::class, 'create']);
 
 Route::get('daftar_skorsing',[SkorsingController::class, 'index']);
 
+//<<<<<<< another_push
+//task
+//Route::get('tasks', [TaskController::class, 'index']);
+//=======
+//>>>>>>> master
