@@ -13,7 +13,6 @@ class Peminjaman extends Model
     protected $fillable = [
         'no_member',
         'kode_buku',
-        'judul',
         'tgl_pinjam'
     ];
 }

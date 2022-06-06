@@ -66,7 +66,7 @@
         }
     </style>
 
-    <h4>Daftar Peminjaman</h4>
+    <h4>Daftar Skorsing</h4>
     <button class="add" type="submit">Add</button>
     <table>
         <colgroup span="2"></colgroup>

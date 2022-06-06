@@ -109,7 +109,8 @@
         <table>
             <th>Nama</th>
             <th>Tanggal</th>
-            <tr>
+            <th>Keterangan</th>
+            <!-- <tr>
                 <td>Oling An</td>
                 <td>02/07/01</td>
             </tr>
@@ -132,7 +133,14 @@
             <tr>
                 <td>Zida</td>
                 <td>02/07/01</td>
-            </tr>
+            </tr> -->
+            @foreach($data as $item)
+                <tr>
+                    <td>{{ $item->name }}</td>
+                    <td>{{ $item->tgl_berkunjung }}</td>
+                    <td>{{ $item->keterangan }}</td>
+                </tr>
+            @endforeach
         </table></div>
     </div>
     </div>
