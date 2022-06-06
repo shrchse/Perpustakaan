@@ -2,7 +2,7 @@
 @section ('content')
 <div class="box-create">
     <div class="login">Create Account</div>
-    <form action="" method="POST">
+    <form action="/register" method="POST">
         <label for="username">Username</label>
         <input type="text" name="username" id="username"> <br> <br>
         <label for="mail">E-Mail</label>
