@@ -36,7 +36,7 @@
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
-    .container .list-big{
+    .container .list-big {
         position: relative;
         float: left;
         width: 600px;
@@ -46,10 +46,12 @@
         border-radius: 12px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         font-size: 24px;
+        overflow: auto;
     }
     .container .list-big .in{
         padding: 30px;
-        text-align: center;
+        text-align: Left;
+
     }
     /* .container .list-big .in img{
         display: block;
@@ -92,17 +94,47 @@
         font-size: 30px;
         padding: 10px;
     }
+    
 </style>
 
 <div class="cardview">
     <div class="quotes">“Reading is essential for those who seek to rise above the ordinary.” - Jim Rohn</div>
     <div class="container">
         <div class="list">
-            <table><td>Discover new books everyday</td></table>
-            <a href="/buku"><div class="button">Start Now!</div></a>
-        </div>
-        <div class="list-big"><div class="in">Welcome
-        </div></div>
+            <table><td>Welcome, Admin
+                Keep it up with your Goodwork!!
+            </td></table>
+    </div>
+        <div class="list-big"><div class="in">Daftar Pengunjung <br>
+        <table>
+            <th>Nama</th>
+            <th>Tanggal</th>
+            <tr>
+                <td>Oling An</td>
+                <td>02/07/01</td>
+            </tr>
+            <tr>
+                <td>Lista</td>
+                <td>02/07/01</td>
+            </tr>
+            <tr>
+                <td>Zida</td>
+                <td>02/07/01</td>
+            </tr>
+                        <tr>
+                <td>Oling An</td>
+                <td>02/07/01</td>
+            </tr>
+            <tr>
+                <td>Lista</td>
+                <td>02/07/01</td>
+            </tr>
+            <tr>
+                <td>Zida</td>
+                <td>02/07/01</td>
+            </tr>
+        </table></div>
+    </div>
     </div>
 </div>
 @endsection

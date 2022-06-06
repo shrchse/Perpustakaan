@@ -71,20 +71,11 @@
     <table>
         <colgroup span="2"></colgroup>
         <th>No. Member</th>
-        <th>Kode Buku</th>
-        <th>JuduL Buku</th>
-        <th>Tanggal Pinjam</th>
+        <th>Nama Member</th>
+        <th>Keterangan</th>
+        <th>Tanggal Selesai</th>
         <th colspan=2 scope="colgroup">Action</th>
+        <td><button class="edit" type="submit">Edit</button></td>
+        <td><button class="delete" type="submit">Delete</button></td>
 
-        @foreach($daftar_pinjam as $item)
-            <tr>
-                <td>{{ $item->no_member }}</td>
-                <td>{{ $item->judul_buku }}</td>
-                <td>{{ $item->judul }}</td>
-                <td>{{ $item->tgl_pinjam }}</td>
-                <td><button class="edit" type="submit">Edit</button></td>
-                <td><button class="delete" type="submit">Delete</button></td>
-            </tr>
-        @endforeach
-    </table>
 @endsection
