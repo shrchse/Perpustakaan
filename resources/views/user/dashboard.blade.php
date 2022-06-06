@@ -102,13 +102,7 @@
             <table><td>Discover new books everyday</td></table>
             <a href="/buku"><div class="button">Start Now!</div></a>
         </div>
-        <div class="list-big"><div class="in">Welcome 'Nama User Login' <br>
-        Diisi Status Peminjaman??
-        <table>
-            <tr>
-                <td>Kek gini?</td>
-            </tr>
-        </table>
+        <div class="list-big"><div class="in">Welcome {{ $item->username }} <br>
         </div></div>
     </div>
 </div>

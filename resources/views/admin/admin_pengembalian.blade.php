@@ -74,13 +74,15 @@
         <th>Kode Buku</th>
         <th>Tanggal Kembali</th>
         <th colspan=2 scope="colgroup">Action</th>
-
+        
+            @foreach($data as $item)
             <tr>
-                <td>a</td>
-                <td>a</td>
-                <td>a</td>
+                <td>{{ $item->no_member }}</td>
+                <td>{{ $item->kode_buku }}</td>
+                <td>{{ $item->tgl_kembali }}</td>
                 <td><button class="edit" type="submit">Edit</button></td>
                 <td><button class="delete" type="submit">Delete</button></td>
             </tr>
+        @endforeach
     </table>
 @endsection

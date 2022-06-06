@@ -6,6 +6,7 @@ use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\SkorsingController;
+use App\Http\Controllers\PengembalianController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\UserAuth;
 /*
@@ -149,9 +150,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
 Route::get('daftar_pengembalian', function(){
     return view('admin.admin_pengembalian');
 });
-    Route::get('form_pengembalian', function(){
-        return view('admin.admin_formPengembalian');
-    });
+Route::get('form_pengembalian', function(){
+    return view('admin.admin_formPengembalian');
+});
+Route::get('daftar_pengembalian',[PengembalianController::class, 'index']);
 
 Route::get('form_addMember', function(){
     return view('admin.add_member');
