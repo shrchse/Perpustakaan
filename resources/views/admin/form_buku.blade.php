@@ -27,7 +27,7 @@
                 <td></td>
                 <td></td>
             </tr> 
-            <td><button type="submit" value="submit">Ajukan Peminjaman</button></td>
+            <td><button type="submit" value="submit">Tambah Buku</button></td>
         </table>
     </form>
 </div>

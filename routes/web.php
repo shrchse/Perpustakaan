@@ -104,11 +104,16 @@ Route::get('daftar_buku', [BookController::class, 'index2']);
 //});
 
 Route::get('daftar_member',[MemberController::class, 'index']);
-
+    Route::get('form_member', function(){
+        return view('admin.form_member');
+    });
 // Route::get('daftar_pinjam', function(){
 //     return view('admin.daftar_pinjam');
 // });
 Route::get('daftar_pinjam',[PeminjamanController::class, 'index']);
+    Route::get('form_peminjaman', function(){
+        return view('admin.form_peminjaman');
+    });
 
 Route::get('admin_about', function(){
     return view('admin.admin_about');
@@ -162,6 +167,9 @@ Route::get('form_addMember', function(){
 Route::get('daftar_skorsing', function(){
     return view('admin.daftar_skorsing');
 });
+    Route::get('form_skorsing', function(){
+        return view ('admin.form_skorsing');
+    });
 
 
 Route::get('/user/member/create', [MemberController::class, 'create']);

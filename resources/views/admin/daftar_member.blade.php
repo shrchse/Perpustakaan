@@ -67,7 +67,7 @@
     </style>
 
     <h4>Daftar Member</h4>
-    <button class="add" type="submit">Add</button>
+    <a href="form_member"><button class="add" type="submit">Add</button></a>
     <table>
         <colgroup span="2"></colgroup>
         <th>Nama Member</th>
