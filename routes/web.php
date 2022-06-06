@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
+use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\UserAuth;
 /*
 |--------------------------------------------------------------------------
@@ -85,6 +86,8 @@ Route::get('search', function(){
 Route::get('admin_dashboard', function(){
     return view('admin.admin_dashboard');
 });
+Route::get('admin_dashboard', [VisitorController::class, 'index']);
+
 Route::get('daftar_buku', [BookController::class, 'index2']);
 
 // Route::get('daftar_buku', function(){
@@ -138,3 +141,16 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
 });
+
+Route::get('form_pengembalian', function(){
+    return view('admin.admin_formPengembalian');
+});
+
+Route::get('form_addMember', function(){
+    return view('admin.add_member');
+});
+
+Route::get('daftar_skorsing', function(){
+    return view('admin.daftar_skorsing');
+});
+

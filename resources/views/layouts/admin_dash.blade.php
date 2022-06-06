@@ -29,13 +29,6 @@
         <div class="menu-bar">
             <div class="menu">
 
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <form action="admin_search" method="get">
-                    <input type="text" placeholder="Search...">
-                    <input type="submit" value="submit" hidden></form>
-                </li>
-
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="/admin_dashboard">
@@ -62,6 +55,20 @@
                         <a href="/daftar_pinjam">
                             <i class='bx bx-calendar icon' ></i>
                             <span class="text nav-text">Daftar Pinjam</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/form_pengembalian">
+                            <i class='bx bx-box icon' ></i>
+                            <span class="text nav-text">Pengembalian</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/daftar_skorsing">
+                            <i class='bx bx-block icon' ></i>
+                            <span class="text nav-text">Skorsing</span>
                         </a>
                     </li>
 

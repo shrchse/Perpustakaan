@@ -1,4 +1,5 @@
 .box{
+    margin-top: 30px;
     background: r695CFE;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -10,7 +11,7 @@
     left: 100px;
     right: 370px;
     top: 76px;
-    bottom: 76px;
+    bottom: 150px;
 }
 form{
     padding-left: 50px;
