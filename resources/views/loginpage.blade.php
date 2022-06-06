@@ -2,7 +2,7 @@
 @section ('content')
 <div class="box">
     <div class="login">Login to Your Account</div>
-    <form action="" method="POST">
+    <form action="user" method="POST">
         <label for="username">Username</label>
         <input type="text" name="username" id="username" > <br><br>
         <label for="password">Password</label>
