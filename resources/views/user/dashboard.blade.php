@@ -1,6 +1,7 @@
 @extends('layouts.dashboardlayout')
 @section('content')
 <style>
+<h2>Hello,{{session('user')}}</h2>
     text{
         font-size: 20px;
     }

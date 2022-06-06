@@ -6,12 +6,15 @@ use Illuminate\Http\Request;
 
 class UserAuth extends Controller
 {
-    //
+
     function userLogin(Request $req)
-    {
-        $data= $req->input();
-        $req->session()->put('user', $data['user']);
-        echo session('user');
+    { 
+    
+        $item=$req->input();
+       $req->session()->put('username' ,$item['username']);
+       //return redirect('user.dashboard');
+       
+        
     }
 
 }
