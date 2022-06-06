@@ -52,7 +52,7 @@
                     </li>
 
                     <li class="nav-link">
-                        <a href="/daftar_pengembalian">
+                        <a href="/daftar_pinjam">
                             <i class='bx bx-calendar icon' ></i>
                             <span class="text nav-text">Daftar Pinjam</span>
                         </a>

@@ -5,6 +5,7 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PeminjamanController;
 use App\Http\Controllers\VisitorController;
+use App\Http\Controllers\SkorsingController;
 use App\Http\Controllers\UserAuth;
 /*
 |--------------------------------------------------------------------------
@@ -157,5 +158,9 @@ Route::get('daftar_skorsing', function(){
     return view('admin.daftar_skorsing');
 });
 
+
 Route::get('/user/member/create', [MemberController::class, 'create']);
+
+
+Route::get('daftar_skorsing',[SkorsingController::class, 'index']);
 
