@@ -64,7 +64,6 @@
         <th>Judul Buku</th>
         <th>Penulis</th>
         <th>Penerbit</th>
-        <th colspan=2 scope="colgroup">Action</th>
 
         @foreach($data as $item)
             <tr>
@@ -72,8 +71,6 @@
                 <td>{{ $item->judul }}</td>
                 <td>{{ $item->penulis }}</td>
                 <td>{{ $item->penerbit }}</td>
-                <td><button class="edit" type="submit">Edit</button></td>
-                <td><button class="delete" type="submit">Delete</button></td>
             </tr>
         @endforeach
     </table>
