@@ -90,7 +90,16 @@
             <td><button class="edit" type="submit">Edit</button></td>
             <td><button class="delete" type="submit">Delete</button></td>
         </tr> -->
-
+        @foreach($data as $item)
+            <tr>
+                <td>{{ $item->kode_buku }}</td>
+                <td>{{ $item->judul }}</td>
+                <td>{{ $item->penulis }}</td>
+                <td>{{ $item->penerbit }}</td>
+                <td><button class="edit" type="submit">Edit</button></td>
+                <td><button class="delete" type="submit">Delete</button></td>
+            </tr>
+        @endforeach
     </table>
 
 @endsection

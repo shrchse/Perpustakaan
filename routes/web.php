@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\PeminjamanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,18 +60,23 @@ Route::get('search', function(){
 Route::get('admin_dashboard', function(){
     return view('admin.admin_dashboard');
 });
-Route::get('daftar_buku', function(){
-    return view('admin.daftar_buku');
-});
+Route::get('daftar_buku', [BookController::class, 'index2']);
+
+// Route::get('daftar_buku', function(){
+//     return view('admin.daftar_buku');
+// });
+
 //Route::get('daftar_member', function(){
 //    return view('admin.daftar_member');
 //});
 
 Route::get('daftar_member',[MemberController::class, 'index']);
 
-Route::get('daftar_pinjam', function(){
-    return view('admin.daftar_pinjam');
-});
+// Route::get('daftar_pinjam', function(){
+//     return view('admin.daftar_pinjam');
+// });
+Route::get('daftar_pinjam',[PeminjamanController::class, 'index']);
+
 Route::get('admin_about', function(){
     return view('admin.admin_about');
 });
