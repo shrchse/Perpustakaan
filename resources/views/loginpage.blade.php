@@ -1,5 +1,6 @@
 @extends('layouts.loginlayout')
 @section ('content')
+
 <div class="box">
     <div class="">Login to Your Account</div>
     <form action="admin_dashboard" method="GET">
