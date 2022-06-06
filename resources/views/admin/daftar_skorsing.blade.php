@@ -71,16 +71,23 @@
     <table>
         <colgroup span="2"></colgroup>
         <th>No. Member</th>
-        <th>Nama Member</th>
         <th>Keterangan</th>
         <th>Tanggal Selesai</th>
         <th colspan=2 scope="colgroup">Action</th>
-        <tr>
-            <td>Temp</td>
+        <!-- <tr>
             <td>Temp</td>
             <td>Temp</td>
             <td>Temp</td>
             <td><button class="edit" type="submit">Edit</button></td>
             <td><button class="delete" type="submit">Delete</button></td>
-        </tr>
+        </tr> -->
+        @foreach($data as $item)
+            <tr>
+                <td>{{ $item->no_member }}</td>
+                <td>{{ $item->ket }}</td>
+                <td>{{ $item->tgl_cabut_skorsing }}</td>
+                <td><button class="edit" type="submit">Edit</button></td>
+                <td><button class="delete" type="submit">Delete</button></td>
+            </tr>
+        @endforeach
 @endsection
