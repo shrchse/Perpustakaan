@@ -11,4 +11,9 @@ class BookController extends Controller
         $data = Book::all();
         return view('user.buku', compact('data'));
     }
+
+    public function index2(){
+        $data = Book::all();
+        return view('admin.daftar_buku', compact('data'));
+    }
 }

@@ -9,6 +9,6 @@ class MemberController extends Controller
 {
     public function index() {
         $daftar_member = Member::all();
-        return view('member.index', compact('daftar_member'));
+        return view('admin.daftar_member', compact('daftar_member'));
     }
 }
