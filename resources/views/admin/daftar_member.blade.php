@@ -50,6 +50,16 @@
             -webkit-backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 26, 26, 0.3);
         }
+        .add{
+            padding: 10px 40px;
+            margin-bottom: 10px;
+            background: rgba(127, 254, 168, 0.75);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 26, 26, 0.3);   
+        }
         button:hover{
             border: none;
             background-color: cornflowerblue;
@@ -57,6 +67,7 @@
     </style>
 
     <h4>Daftar Member</h4>
+    <button class="add" type="submit">Add</button>
     <table>
         <colgroup span="2"></colgroup>
         <th>Nama Member</th>

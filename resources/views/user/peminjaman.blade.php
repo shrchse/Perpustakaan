@@ -13,10 +13,6 @@
                 <td><input type="text" name="kode" id="kode"> <br></td>
             </tr>
             <tr>
-                <td><label for="judul">Judul Buku</label></td>
-                <td><input type="text" name="Judul Buku" id="judul"></td>
-            </tr>
-            <tr>
                 <td><label for="tgl_pinjam">Tanggal Peminjaman</label></td>
                 <td><input style="margin-left:10px;" type="date" name="tgl_pinjam" id="tgl_pinjam"></td>
             </tr>

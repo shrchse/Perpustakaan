@@ -114,3 +114,7 @@ Route::get('form_pengembalian', function(){
 Route::get('form_addMember', function(){
     return view('admin.add_member');
 });
+
+Route::get('daftar_skorsing', function(){
+    return view('admin.daftar_skorsing');
+});
