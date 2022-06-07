@@ -92,7 +92,7 @@ Route::get('admin_dashboard', function(){
 Route::get('admin_dashboard', [VisitorController::class, 'index']);
 
 Route::get('daftar_buku', [BookController::class, 'index2']);
-    Route::get('form_buku', function(){
+   Route::get('form_buku', function(){
         return view('admin.form_buku');
     });
 // Route::get('daftar_buku', function(){
@@ -176,6 +176,21 @@ Route::get('/user/member/create', [MemberController::class, 'create']);
 
 
 Route::get('daftar_skorsing',[SkorsingController::class, 'index']);
+
+
+Route::get('buku', [BookController::class, 'index']);
+
+//Route::get('form_buku/{id}', [BookController::class, 'edit']);
+
+
+
+
+
+   // return view ('admin.form_buku');
+
+//Route::view("edit",'/{id}');
+
+Route::put('update-data/{id}', [BookController::class, 'update']);
 
 //<<<<<<< another_push
 //task

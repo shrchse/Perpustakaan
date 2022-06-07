@@ -16,4 +16,22 @@ class BookController extends Controller
         $data = Book::all();
         return view('admin.daftar_buku', compact('data'));
     }
+
+    //public function edit($id)
+    //{
+     //   $data = Book::find($id);
+       // return view('admin.form_buku', compact('data'));
+    //}
+
+    public function update(Request $request, $id)
+    {
+        $data = Book::find($id);
+        $data->kode_buku = $request->input('kode_buku');
+        $data->judul = $request->input('judul');
+        $data->penulis = $request->input('penulis');
+        $data->penerbit = $request->input('penerbit');
+        $data->update();
+        return redirect()->back()->with('status','Book Updated Successfully');
+    }
+
 }

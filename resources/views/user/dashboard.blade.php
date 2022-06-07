@@ -102,7 +102,7 @@
             <table><td>Discover new books everyday</td></table>
             <a href="/buku"><div class="button">Start Now!</div></a>
         </div>
-        <div class="list-big"><div class="in">Welcome {{ $item->username }} <br>
+        <div class="list-big"><div class="in">Welcome<br>
         </div></div>
     </div>
 </div>

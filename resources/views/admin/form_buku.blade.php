@@ -27,7 +27,7 @@
                 <td></td>
                 <td></td>
             </tr> 
-            <td><button type="submit" value="submit">Tambah Buku</button></td>
+            <td><button type="submit" value="submit"><a href="{{ url('daftar_buku') }}" class="btn btn-primary float-end">Tambah Buku</a></button></td>
         </table>
     </form>
 </div>

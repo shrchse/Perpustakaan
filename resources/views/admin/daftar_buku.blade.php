@@ -83,7 +83,7 @@
                 <td>{{ $item->judul }}</td>
                 <td>{{ $item->penulis }}</td>
                 <td>{{ $item->penerbit }}</td>
-                <td><button class="edit" type="submit"><a href="#" class="btn btn-warning">Edit</button></td>
+                <td><button class="edit" type="submit"><a href="{{ url('form_buku/'.$item->id) }}" class="btn btn-primary btn-sm">Edit</button></a></td>
                 <td><button class="delete" type="submit"><a href="#" class="btn btn-danger">Delete</button></td>
             </tr>
         @endforeach
