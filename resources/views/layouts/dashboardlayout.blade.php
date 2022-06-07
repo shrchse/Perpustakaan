@@ -65,13 +65,6 @@
                         </a>
                     </li>
 
-                    <li class="nav-link">
-                        <a href="/about">
-                            <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">About Us</span>
-                        </a>
-                    </li>
-
                 </ul>
             </div>
 
