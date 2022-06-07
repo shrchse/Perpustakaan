@@ -2,3 +2,8 @@
 <img width="338" alt="image" src="https://user-images.githubusercontent.com/102134676/172282494-dc5db333-de32-48e3-a50e-c07480501dc5.png">
 
 template yang dipakai : https://www.codinglabweb.com/2022/01/sidebar-menu-in-html-css-javascript.html
+
+Kelompok 5
+Amazida
+Felisitas Artemisia Rerung
+Oling Anugrah Fajar Pratama
