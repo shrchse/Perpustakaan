@@ -29,8 +29,6 @@ if(isset($_POST['submit']))
 
     //elseif($username)
 }
-
-
 ?>
 
 @endsection

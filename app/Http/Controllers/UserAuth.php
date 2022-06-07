@@ -12,9 +12,7 @@ class UserAuth extends Controller
     
     $item=$req->input();
     $req->session()->put('username' ,$item['username']);
-       //return redirect('user.dashboard');
-       
-        
+       //return redirect('user.dashboard');  
     }
 
 }
