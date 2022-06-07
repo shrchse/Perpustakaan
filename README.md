@@ -4,6 +4,6 @@
 template yang dipakai : https://www.codinglabweb.com/2022/01/sidebar-menu-in-html-css-javascript.html
 
 Kelompok 5
-Amazida
-Felisitas Artemisia Rerung
-Oling Anugrah Fajar Pratama
+- Amazida
+- Felisitas Artemisia Rerung
+- Oling Anugrah Fajar Pratama
