@@ -16,4 +16,10 @@ class BookController extends Controller
         $data = Book::all();
         return view('admin.daftar_buku', compact('data'));
     }
+
+    public function delete($id){
+        $data = Book::find($id);
+        $data->delete();
+        return view('daftar_buku');
+    }
 }

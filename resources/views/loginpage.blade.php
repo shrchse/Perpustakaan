@@ -2,7 +2,7 @@
 @section ('content')
 
 <div class="box">
-    <div class="">Login to Your Account</div>
+    <div class="log">Login to Your Account</div>
     <form action="admin_dashboard" method="GET">
         @csrf
         <label for="username">Username</label>

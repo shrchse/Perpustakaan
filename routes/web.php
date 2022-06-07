@@ -177,6 +177,8 @@ Route::get('/user/member/create', [MemberController::class, 'create']);
 
 Route::get('daftar_skorsing',[SkorsingController::class, 'index']);
 
+Route::get('/delete',[BookController::class, 'delete']);
+
 //<<<<<<< another_push
 //task
 //Route::get('tasks', [TaskController::class, 'index']);

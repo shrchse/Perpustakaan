@@ -84,7 +84,7 @@
                 <td>{{ $item->penulis }}</td>
                 <td>{{ $item->penerbit }}</td>
                 <td><button class="edit" type="submit"><a href="#" class="btn btn-warning">Edit</button></td>
-                <td><button class="delete" type="submit"><a href="#" class="btn btn-danger">Delete</button></td>
+                <td><button class="delete" type="submit"><a href="/delete/{id}" class="btn btn-danger">Delete</button></td>
             </tr>
         @endforeach
     </table>
